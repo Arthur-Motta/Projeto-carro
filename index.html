@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+    *{
+      font-family: 'Lexend Deca', sans-serif;
+      overflow: hidden;
+    }
+
+    body{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+
+    section{
+      display:flex;
+      border-radius: 5px;
+      overflow: hidden;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section div{
+      padding: 35px;
+    }
+
+    button{
+      background-color: #fff;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 25px;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    button:hover{
+      opacity: 0.8;
+    }
+
+    .orange button{
+      color: hsl(31, 77%, 52%);
+    }
+
+    .orange{
+      background-color: hsl(31, 77%, 52%);
+    } 
+
+    .cian button{
+      color:  hsl(184, 100%, 22%);
+    }
+
+    .cian{
+      background-color:  hsl(184, 100%, 22%);
+    }
+
+    .darkcian button{
+       color: hsl(179, 100%, 13%);
+    }
+    
+    .darkcian{
+      background-color: hsl(179, 100%, 13%);
+    }
+
+    h1{
+      font-family: 'Big Shoulders Display', cursive;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+
+    h1, p{
+      color: #fff;
+    }
+
+    p{
+      font-size: 16px;
+      margin-bottom: 70px;
+    }
+
+    @media(max-width:900px){
+      section{
+        flex-direction: column;
+      }
+      body{
+        overflow-y: auto;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <section>
+    <div class="orange">
+      <img src="/images/icon-sedans.svg" alt="Sedan"/>
+      <h1>Sedans</h1>
+      <p>
+        Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.
+      </p> 
+      <button>
+        Learn more
+      </button>
+    </div>
+    <div class="cian">
+      <img src="/images/icon-suvs.svg" alt="SUV"/>
+      <h1>SUVs</h1>
+      <p>
+        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.
+      </p> 
+      <button>
+        Learn more
+      </button>
+    </div>
+    <div class="darkcian">
+      <img src="/images/icon-luxury.svg" alt="Luxury"/>
+      <h1>Luxury</h1>
+      <p>
+        Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.
+      </p> 
+      <button>
+        Learn more
+      </button>
+    </div>
+  </section>
+
+  </body>
+</html>
